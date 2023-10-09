@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#F7FAFF">
+    <link rel="icon" href="./img/content/favicon.svg">
+    <link rel="mask-icon" href="./img/content/favicon.svg" color="#F7FAFF">
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/content/touch-icon-ipad.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="./img/content/touch-icon-ipad-pro.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/content/touch-icon-iphone-retina.png">
+    <title>Корзина</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+    <script src="./js/script.min.js" defer></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__top">
+          <div class="container">
+            <div class="header__body header__body_top">
+              <ul class="sup-menu">
+                <li class="sup-menu__item">
+                  <a class="sup-menu__link" href="./about.html">О компании</a>
+                </li>
+                <li class="sup-menu__item">
+                  <a class="sup-menu__link" href="./services.html">Сервис</a>
+                </li>
+                <li class="sup-menu__item">
+                  <a class="sup-menu__link" href="./b2b.html">B2B</a>
+                </li>
+                <li class="sup-menu__item">
+                  <a class="sup-menu__link" href="./contacts.html">Контакты</a>
+                </li>
+              </ul>
+              <!-- <div class="auth-action">
+                <div class="auth-action__item">
+                  <a class="auth-action__link" href="./lc.html">Войти в ЛК</a>
+                </div>
+              </div> -->
+              <div class="auth-action auth-action_active">
+                <div class="auth-action__item">
+                  <a class="auth-action__link" href="./lc.html">
+                    <span>Имя пользователя</span>
+                  </a>
+                </div>
+                <div class="auth-action__item">
+                  <a class="auth-action__link" href="#">Выйти</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__fixed" data-lp>
+          <div class="container">
+            <div class="header__body header__body_fixed">
+              <div class="header__main">
+                <a class="logo logo_header" href="./index.html">
+                  <img class="logo__img" src="./img/content/logo.svg" alt="logo">
+                </a>
+                <nav class="menu menu_sub">
+                  <button class="menu__btn" data-menu>
+                    <svg class="menu__icon">
+                      <use xlink:href="./img/icons/icons.svg#menu"></use>
+                      <use xlink:href="./img/icons/icons.svg#close"></use>
+                    </svg>
+                    Меню
+                  </button>
+                  <div class="menu__body">
+                    <ul class="menu__list">
+                      <li class="menu__item">
+                        <a class="menu__link" href="./about.html">О компании</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="./services.html">Сервис</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="./b2b.html">B2B</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="./contacts.html">Контакты</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+                <nav class="menu menu_catalog">
+                  <button class="menu__btn" data-menu>
+                    <svg class="menu__icon">
+                      <use xlink:href="./img/icons/icons.svg#catalog"></use>
+                      <use xlink:href="./img/icons/icons.svg#close"></use>
+                    </svg>
+                    Каталог
+                  </button>
+                  <div class="menu__body">
+                    <ul class="menu__list">
+                      <li class="menu__item">
+                        <a class="menu__link" href="./catalog-tea.html">Кофе</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="./catalog-tea.html">Чай</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="./catalog-tea.html">Системы для воды</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="./catalog-tea.html">Кофемашины</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="./catalog-tea.html">Аксессуары</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link menu__link_accent" href="./catalog-tea.html">
+                          Спецпредложения
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+                <ul class="user-action">
+                  <li class="user-action__item">
+                    <a
+                      class="user-action__link user-action__link_favorite"
+                      href="./favorite.html"
+                      aria-label="Избранное"
+                      title="Избранное"
+                    >
+                      <svg class="user-action__icon">
+                        <use xlink:href="./img/icons/icons.svg#heart"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="user-action__item">
+                    <a
+                      class="user-action__link user-action__link_cart"
+                      href="./cart.html"
+                      aria-label="Корзина"
+                      title="Корзина"
+                    >
+                      <svg class="user-action__icon">
+                        <use xlink:href="./img/icons/icons.svg#cart"></use>
+                      </svg>
+                    </a>
+                    <span class="user-action__count">999</span>
+                  </li>
+                  <li class="user-action__item user-action__item_search">
+                    <form class="search" action="#">
+                      <div class="search__wrapper">
+                        <div class="search__body">
+                          <select data-modifier="search" data-speed="0">
+                            <option value="Все категории" selected>Все категории</option>
+                            <option value="Кофе">Кофе</option>
+                            <option value="Кофемашины">Кофемашины</option>
+                            <option value="Чай">Чай</option>
+                            <option value="Аксессуары">Аксессуары</option>
+                            <option value="Системы воды">Системы воды</option>
+                          </select>
+                          <input class="search__input" type="search" placeholder="Поиск..">
+                          <button
+                            class="search__btn search__btn_open"
+                            data-da=".search,767,last"
+                            type="button"
+                            aria-label="Поиск"
+                            title="Поиск"
+                          >
+                            <svg class="search__icon search__icon">
+                              <use xlink:href="./img/icons/icons.svg#search"></use>
+                              <use xlink:href="./img/icons/icons.svg#close"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                      <button
+                        class="search__btn search__btn_submit"
+                        type="submit"
+                        aria-label="Искать"
+                        title="Искать"
+                      >
+                        <svg class="search__icon">
+                          <use xlink:href="./img/icons/icons.svg#search"></use>
+                        </svg>
+                      </button>
+                    </form>
+                  </li>
+                  <li class="user-action__item">
+                    <a
+                      class="user-action__link user-action__link_lc"
+                      href="./lc.html"
+                      aria-label="Личный кабинет"
+                      title="Личный кабинет"
+                    >
+                      <svg class="user-action__icon">
+                        <use xlink:href="./img/icons/icons.svg#user"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="header-action">
+                <div class="header-action__item">
+                  <a class="header-action__link" href="./favorite.html">
+                    <svg class="header-action__icon">
+                      <use xlink:href="./img/icons/icons.svg#heart"></use>
+                    </svg>
+                    Избранное
+                  </a>
+                </div>
+                <div class="header-action__item">
+                  <a class="header-action__link" href="./cart.html">
+                    <svg class="header-action__icon">
+                      <use xlink:href="./img/icons/icons.svg#cart"></use>
+                    </svg>
+                    Корзина
+                  </a>
+                  <span class="header-action__count">999</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="page">
+        <section class="cart">
+          <div class="container">
+            <div class="cart__body">
+              <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link" href="./index.html">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <span class="breadcrumbs__link">Корзина</span>
+                </li>
+              </ul>
+              <div class="cart__head">
+                <h2 class="cart__title h4">Корзина</h2>
+                <button class="cart__btn" type="button">
+                  Очистить
+                  <svg class="cart__btn-icon">
+                    <use xlink:href="./img/icons/icons.svg#close"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="cart__main">
+                <!-- <div class="empty-cart">
+                  <p class="empty-cart__text">
+                    В корзине пока ничего нет. Выберите категорию и перейдите в каталог
+                  </p>
+                  <a class="empty-cart__btn btn btn_white" href="./index.html">На главную</a>
+                </div> -->
+                <ul class="cart__list">
+                  <li class="cart__item">
+                    <div class="cart-card">
+                      <a class="cart-card__main" href="./product.html">
+                        <div class="cart-card__img-box">
+                          <picture><source srcset="./img/content/catalog/tea-1.webp" type="image/webp"><img class="cart-card__img" src="./img/content/catalog/tea-1.jpg" alt="image"></picture>
+                        </div>
+                        <div class="cart-card__info">
+                          <ul class="cart-card__specs">
+                            <li class="cart-card__spec">Арт. 123456</li>
+                            <li class="cart-card__spec">Gran Caffè Garibaldi</li>
+                          </ul>
+                          <h3 class="cart-card__name">QT Iced Tea Pouches - Summer Peach Tea</h3>
+                          <div class="cart-card__prices prices">
+                            <div class="prices__sale">800 ₽</div>
+                            <div class="prices__info">
+                              <div class="prices__main">253 498 ₽</div>
+                              <div class="prices__desc"><span>за штуку</span><span>35 ₽</span></div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                      <div class="cart-card__action cart-action">
+                        <div class="cart-action__quantity quantity">
+                          <button
+                            class="quantity__button quantity__button_minus"
+                            type="button"
+                            aria-label="Уменьшить"
+                            title="Уменьшить"
+                          >
+                            <svg class="quantity__icon">
+                              <use xlink:href="./img/icons/icons.svg#minus"></use>
+                            </svg>
+                          </button>
+                          <div class="quantity__input-box">
+                            <input class="quantity__input" type="text" value="1">
+                          </div>
+                          <button
+                            class="quantity__button quantity__button_plus"
+                            type="button"
+                            aria-label="Увеличить"
+                            title="Увеличить"
+                          >
+                            <svg class="quantity__icon">
+                              <use xlink:href="./img/icons/icons.svg#plus"></use>
+                            </svg>
+                          </button>
+                        </div>
+                        <ul class="cart-action__items">
+                          <li class="cart-action__item">
+                            <button
+                              class="favorite-btn favorite-btn_cart"
+                              type="button"
+                              aria-label="Добавить в избранное"
+                              title="Добавить в избранное"
+                            >
+                              <svg class="favorite-btn__icon">
+                                <use xlink:href="./img/icons/icons.svg#favorite"></use>
+                              </svg>
+                            </button>
+                          </li>
+                          <li class="cart-action__item">
+                            <button
+                              class="cart-action__btn"
+                              type="button"
+                              aria-label="Убрать из карзины"
+                              title="Убрать из карзины"
+                            >
+                              <svg class="cart-action__icon">
+                                <use xlink:href="./img/icons/icons.svg#close"></use>
+                              </svg>
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="cart__item">
+                    <div class="cart-card">
+                      <a class="cart-card__main" href="./product.html">
+                        <div class="cart-card__img-box">
+                          <picture><source srcset="./img/content/catalog/tea-6.webp" type="image/webp"><img class="cart-card__img" src="./img/content/catalog/tea-6.jpg" alt="image"></picture>
+                        </div>
+                        <div class="cart-card__info">
+                          <ul class="cart-card__specs">
+                            <li class="cart-card__spec">Арт. 123456</li>
+                            <li class="cart-card__spec">Gran Caffè Garibaldi</li>
+                          </ul>
+                          <h3 class="cart-card__name">QT Iced Tea Pouches - Summer Peach Tea</h3>
+                          <div class="cart-card__prices prices">
+                            <div class="prices__info">
+                              <div class="prices__main">253 498 ₽</div>
+                              <div class="prices__desc"><span>за штуку</span><span>35 ₽</span></div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                      <div class="cart-card__action cart-action">
+                        <div class="cart-action__quantity quantity">
+                          <button
+                            class="quantity__button quantity__button_minus"
+                            type="button"
+                            aria-label="Уменьшить"
+                            title="Уменьшить"
+                          >
+                            <svg class="quantity__icon">
+                              <use xlink:href="./img/icons/icons.svg#minus"></use>
+                            </svg>
+                          </button>
+                          <div class="quantity__input-box">
+                            <input class="quantity__input" type="text" value="1">
+                          </div>
+                          <button
+                            class="quantity__button quantity__button_plus"
+                            type="button"
+                            aria-label="Увеличить"
+                            title="Увеличить"
+                          >
+                            <svg class="quantity__icon">
+                              <use xlink:href="./img/icons/icons.svg#plus"></use>
+                            </svg>
+                          </button>
+                        </div>
+                        <ul class="cart-action__items">
+                          <li class="cart-action__item">
+                            <button
+                              class="favorite-btn favorite-btn_cart"
+                              type="button"
+                              aria-label="Добавить в избранное"
+                              title="Добавить в избранное"
+                            >
+                              <svg class="favorite-btn__icon">
+                                <use xlink:href="./img/icons/icons.svg#favorite"></use>
+                              </svg>
+                            </button>
+                          </li>
+                          <li class="cart-action__item">
+                            <button
+                              class="cart-action__btn"
+                              type="button"
+                              aria-label="Убрать из карзины"
+                              title="Убрать из карзины"
+                            >
+                              <svg class="cart-action__icon">
+                                <use xlink:href="./img/icons/icons.svg#close"></use>
+                              </svg>
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="cart__item">
+                    <div class="cart-card">
+                      <a class="cart-card__main" href="./product.html">
+                        <div class="cart-card__img-box">
+                          <picture><source srcset="./img/content/catalog/coffee-4.webp" type="image/webp"><img class="cart-card__img" src="./img/content/catalog/coffee-4.jpg" alt="image"></picture>
+                        </div>
+                        <div class="cart-card__info">
+                          <ul class="cart-card__specs">
+                            <li class="cart-card__spec">Арт. 123456</li>
+                            <li class="cart-card__spec">Gran Caffè Garibaldi</li>
+                          </ul>
+                          <h3 class="cart-card__name">Кофе-капсулы Garibaldi Blend Colombia, 10 уп.</h3>
+                          <div class="cart-card__prices prices">
+                            <div class="prices__info">
+                              <div class="prices__main">2 498 ₽</div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                      <div class="cart-card__action cart-action">
+                        <div class="cart-action__quantity quantity">
+                          <button
+                            class="quantity__button quantity__button_minus"
+                            type="button"
+                            aria-label="Уменьшить"
+                            title="Уменьшить"
+                          >
+                            <svg class="quantity__icon">
+                              <use xlink:href="./img/icons/icons.svg#minus"></use>
+                            </svg>
+                          </button>
+                          <div class="quantity__input-box">
+                            <input class="quantity__input" type="text" value="1">
+                          </div>
+                          <button
+                            class="quantity__button quantity__button_plus"
+                            type="button"
+                            aria-label="Увеличить"
+                            title="Увеличить"
+                          >
+                            <svg class="quantity__icon">
+                              <use xlink:href="./img/icons/icons.svg#plus"></use>
+                            </svg>
+                          </button>
+                        </div>
+                        <ul class="cart-action__items">
+                          <li class="cart-action__item">
+                            <button
+                              class="favorite-btn favorite-btn_cart"
+                              type="button"
+                              aria-label="Добавить в избранное"
+                              title="Добавить в избранное"
+                            >
+                              <svg class="favorite-btn__icon">
+                                <use xlink:href="./img/icons/icons.svg#favorite"></use>
+                              </svg>
+                            </button>
+                          </li>
+                          <li class="cart-action__item">
+                            <button
+                              class="cart-action__btn"
+                              type="button"
+                              aria-label="Убрать из карзины"
+                              title="Убрать из карзины"
+                            >
+                              <svg class="cart-action__icon">
+                                <use xlink:href="./img/icons/icons.svg#close"></use>
+                              </svg>
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="cart__item">
+                    <div class="cart-card">
+                      <a class="cart-card__main" href="./product.html">
+                        <div class="cart-card__img-box">
+                          <picture><source srcset="./img/content/catalog/coffee-9.webp" type="image/webp"><img class="cart-card__img" src="./img/content/catalog/coffee-9.jpg" alt="image"></picture>
+                        </div>
+                        <div class="cart-card__info">
+                          <ul class="cart-card__specs">
+                            <li class="cart-card__spec">Арт. 123456</li>
+                            <li class="cart-card__spec">Gran Caffè Garibaldi</li>
+                          </ul>
+                          <h3 class="cart-card__name">Кофе-капсулы Garibaldi Blend Colombia, 10 уп.</h3>
+                          <div class="cart-card__prices prices">
+                            <div class="prices__sale">800 ₽</div>
+                            <div class="prices__info">
+                              <div class="prices__main">253 498 ₽</div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                      <div class="cart-card__action cart-action">
+                        <div class="cart-action__quantity quantity">
+                          <button
+                            class="quantity__button quantity__button_minus"
+                            type="button"
+                            aria-label="Уменьшить"
+                            title="Уменьшить"
+                          >
+                            <svg class="quantity__icon">
+                              <use xlink:href="./img/icons/icons.svg#minus"></use>
+                            </svg>
+                          </button>
+                          <div class="quantity__input-box">
+                            <input class="quantity__input" type="text" value="1">
+                          </div>
+                          <button
+                            class="quantity__button quantity__button_plus"
+                            type="button"
+                            aria-label="Увеличить"
+                            title="Увеличить"
+                          >
+                            <svg class="quantity__icon">
+                              <use xlink:href="./img/icons/icons.svg#plus"></use>
+                            </svg>
+                          </button>
+                        </div>
+                        <ul class="cart-action__items">
+                          <li class="cart-action__item">
+                            <button
+                              class="favorite-btn favorite-btn_cart"
+                              type="button"
+                              aria-label="Добавить в избранное"
+                              title="Добавить в избранное"
+                            >
+                              <svg class="favorite-btn__icon">
+                                <use xlink:href="./img/icons/icons.svg#favorite"></use>
+                              </svg>
+                            </button>
+                          </li>
+                          <li class="cart-action__item">
+                            <button
+                              class="cart-action__btn"
+                              type="button"
+                              aria-label="Убрать из карзины"
+                              title="Убрать из карзины"
+                            >
+                              <svg class="cart-action__icon">
+                                <use xlink:href="./img/icons/icons.svg#close"></use>
+                              </svg>
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="cart__summary summary">
+                  <div class="summary__top">
+                    <h5 class="summary__title h4">Итог</h5>
+                    <dl class="summary__list">
+                      <div class="summary__item">
+                        <dt class="summary__name">Выгода</dt>
+                        <dd class="summary__desc">12 052 ₽</dd>
+                      </div>
+                      <div class="summary__item">
+                        <dt class="summary__name">Доставка</dt>
+                        <dd class="summary__desc summary__desc_mark">0 ₽</dd>
+                      </div>
+                    </dl>
+                  </div>
+                  <div class="summary__main">
+                    <dl class="summary__list">
+                      <div class="summary__item">
+                        <dt class="summary__name">Всего</dt>
+                        <dd class="summary__desc">13 товаров 5.4кг</dd>
+                      </div>
+                    </dl>
+                    <div class="summary__result">12 052 ₽</div>
+                  </div>
+                  <div class="summary__submit">
+                    <button class="summary__btn btn btn_green" type="button" disabled>
+                      Оформить заказ
+                    </button>
+                    <p class="summary__error">Минимальная сумма заказа 2000 ₽</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__body">
+            <div class="footer__first">
+              <a class="logo logo_footer" href="./index.html">
+                <img class="logo__img" src="./img/content/logo.svg" alt="Natem">
+              </a>
+              <div class="footer__social social">
+                <p class="social__title">Мы в соцсетях</p>
+                <ul class="social__list">
+                  <li class="social__item">
+                    <a
+                      class="social__link"
+                      href="https://vk.com"
+                      target="_blank"
+                      aria-label="Вконтакте"
+                      title="Вконтакте"
+                    >
+                      <img class="social__img" src="./img/icons/social/vk.svg" alt="Вконтакте">
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a
+                      class="social__link"
+                      href="https://ok.ru"
+                      target="_blank"
+                      aria-label="Одноклассники"
+                      title="Одноклассники"
+                    >
+                      <img class="social__img" src="./img/icons/social/ok.svg" alt="Одноклассники">
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a
+                      class="social__link"
+                      href="https://dzen.ru"
+                      target="_blank"
+                      aria-label="Дзен"
+                      title="Дзен"
+                    >
+                      <img class="social__img" src="./img/icons/social/dz.svg" alt="Дзен">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__main">
+              <nav class="footer-menu">
+                <div class="footer-menu__box">
+                  <h5 class="footer-menu__title h7">Каталог</h5>
+                  <ul class="footer-menu__list">
+                    <li class="footer-menu__item">
+                      <a class="footer-menu__link" href="./catalog-tea.html">Кофе</a>
+                    </li>
+                    <li class="footer-menu__item">
+                      <a class="footer-menu__link" href="./catalog-tea.html">Чай</a>
+                    </li>
+                    <li class="footer-menu__item">
+                      <a class="footer-menu__link" href="./catalog-tea.html">Системы для воды</a>
+                    </li>
+                    <li class="footer-menu__item">
+                      <a class="footer-menu__link" href="./catalog-tea.html">Кофемашины</a>
+                    </li>
+                    <li class="footer-menu__item">
+                      <a class="footer-menu__link" href="./catalog-tea.html">Аксессуары</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer-menu__box">
+                  <h5 class="footer-menu__title h7">Важное</h5>
+                  <ul class="footer-menu__list">
+                    <li class="footer-menu__item">
+                      <a class="footer-menu__link" href="./about.html">О компании</a>
+                    </li>
+                    <li class="footer-menu__item">
+                      <a class="footer-menu__link" href="./services.html">Сервис</a>
+                    </li>
+                    <li class="footer-menu__item">
+                      <a class="footer-menu__link" href="./b2b.html">B2B</a>
+                    </li>
+                    <li class="footer-menu__item">
+                      <a class="footer-menu__link" href="./contacts.html">Контакты</a>
+                    </li>
+                    <li class="footer-menu__item">
+                      <a class="footer-menu__link" href="./catalog-tea.html">Спецпредложения</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer-menu__box">
+                  <h5 class="footer-menu__title h7">Документы</h5>
+                  <ul class="footer-menu__list footer-menu__list_custom">
+                    <li class="footer-menu__item">
+                      <a class="footer-menu__link" href="./policy.html">
+                        Политика обработки персональных данных
+                      </a>
+                    </li>
+                    <li class="footer-menu__item">
+                      <a class="footer-menu__link" href="./agree.html">
+                        Согласие на обработку персональных данных
+                      </a>
+                    </li>
+                    <li class="footer-menu__item">
+                      <a class="footer-menu__link" href="./offer.html">Публичная оферта</a>
+                    </li>
+                    <li class="footer-menu__item">
+                      <a class="footer-menu__link" href="./cookie.html">Политика Cookie</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <div class="footer__last">
+              <div class="footer-contacts">
+                <div class="footer-contacts__main">
+                  <a class="footer-contacts__phone" href="tel:88003333887">8 800 33 33 887</a>
+                  <a class="footer-contacts__mail" href="mailto:support@natem.ru" target="_blank">
+                    support@natem.ru
+                  </a>
+                </div>
+                <div class="footer-contacts__action">
+                  <a class="footer-contacts__btn btn btn_green" href="#" data-popup="#contact-form">
+                    Обратный звонок
+                  </a>
+                  <a class="footer-contacts__btn btn btn_light" href="#" data-goto=".wrapper">Наверх</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="footer__copy">© 2023 Natem</div>
+        </div>
+      </footer>
+    </div>
+
+    <div class="popup" id="contact-form">
+      <div class="popup__body">
+        <button
+          class="popup__close"
+          aria-label="Закрыть окно"
+          title="Закрыть окно"
+          type="button"
+          data-close
+        ></button>
+        <div class="popup__inner">
+          <!-- Обратный звонок -->
+        </div>
+      </div>
+    </div>
+
+    <nav class="mobile-menu">
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__btn" href="./favorite.html" aria-label="Избранное" title="Избранное">
+            <svg class="mobile-menu__icon">
+              <use xlink:href="./img/icons/icons.svg#heart"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__btn" href="./cart.html" aria-label="Корзина" title="Корзина">
+            <svg class="mobile-menu__icon">
+              <use xlink:href="./img/icons/icons.svg#cart"></use>
+            </svg>
+          </a>
+          <span class="mobile-menu__count">999</span>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__btn" href="./lc.html" aria-label="Личный кабинет" title="Личный кабинет">
+            <svg class="mobile-menu__icon">
+              <use xlink:href="./img/icons/icons.svg#user"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-menu__item">
+          <button class="mobile-menu__btn" data-menu type="button" aria-label="Меню" title="Меню">
+            <svg class="mobile-menu__icon">
+              <use xlink:href="./img/icons/icons.svg#menu"></use>
+              <use xlink:href="./img/icons/icons.svg#close"></use>
+            </svg>
+          </button>
+          <div class="mobile-sub-menu">
+            <ul class="mobile-sub-menu__list">
+              <li class="mobile-sub-menu__item">
+                <a class="mobile-sub-menu__link" href="./about.html">О компании</a>
+              </li>
+              <li class="mobile-sub-menu__item">
+                <a class="mobile-sub-menu__link" href="./services.html">Сервис</a>
+              </li>
+              <li class="mobile-sub-menu__item">
+                <a class="mobile-sub-menu__link" href="./b2b.html">B2B</a>
+              </li>
+              <li class="mobile-sub-menu__item">
+                <a class="mobile-sub-menu__link" href="./contacts.html">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
