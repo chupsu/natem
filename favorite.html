@@ -10,7 +10,7 @@
     <link rel="apple-touch-icon" sizes="152x152" href="./img/content/touch-icon-ipad.png">
     <link rel="apple-touch-icon" sizes="167x167" href="./img/content/touch-icon-ipad-pro.png">
     <link rel="apple-touch-icon" sizes="180x180" href="./img/content/touch-icon-iphone-retina.png">
-    <title>Чай</title>
+    <title>Избранное</title>
     <link rel="stylesheet" href="./css/style.min.css">
     <script src="./js/script.min.js" defer></script>
   </head>
@@ -222,26 +222,19 @@
       </header>
 
       <main class="page">
-        <section class="catalog-head catalog-head_card">
+        <section class="catalog-head">
           <div class="container">
             <div class="catalog-head__body">
-              <div class="catalog-head__img-box">
-                <picture><source srcset="./img/content/img/tea-head.webp" type="image/webp"><img class="catalog-head__img" src="./img/content/img/tea-head.jpg" alt="Чай"></picture>
-              </div>
               <div class="catalog-head__content">
                 <ul class="breadcrumbs">
                   <li class="breadcrumbs__item">
                     <a class="breadcrumbs__link" href="./index.html">Главная</a>
                   </li>
                   <li class="breadcrumbs__item">
-                    <span class="breadcrumbs__link">Чай</span>
+                    <span class="breadcrumbs__link">Избранное</span>
                   </li>
                 </ul>
-                <h1 class="catalog-head__title h3">Чай</h1>
-                <p class="catalog-head__text">
-                  Воздействие витаминного травяного чая комплексное и равномерное, помогает организму в
-                  мегаполисе!
-                </p>
+                <h1 class="catalog-head__title h3">Избранное</h1>
               </div>
             </div>
           </div>
@@ -250,376 +243,8 @@
           <div class="container">
             <div class="catalog__body">
               <div class="catalog__box">
-                <aside class="catalog__sidebar">
-                  <div class="filters">
-                    <button
-                      class="filters__menu btn"
-                      type="button"
-                      data-menu
-                      aria-label="Открыть фильтр"
-                      title="Открыть фильтр"
-                    >
-                      <svg>
-                        <use xlink:href="./img/icons/icons.svg#filter"></use>
-                      </svg>
-                      Фильтр
-                    </button>
-                    <div class="filters__wrapper">
-                      <form class="filters__body" action="#" data-spollers data-spollers-speed="0">
-                        <div class="filters__inner">
-                          <div class="filters__head">
-                            <h3 class="filters__title h3">Фильтр</h3>
-                            <button
-                              class="filters__close"
-                              type="button"
-                              data-menu
-                              aria-label="Закрыть фильтр"
-                              title="Закрыть фильтр"
-                            >
-                              <svg>
-                                <use xlink:href="./img/icons/icons.svg#close"></use>
-                              </svg>
-                            </button>
-                          </div>
-                          <div class="filters__main">
-                            <div class="filters__box">
-                              <button
-                                class="filters__subtitle _spoller-active h7"
-                                type="button"
-                                data-spoller
-                              >
-                                <span class="filters__name">Категории</span>
-                              </button>
-                              <div class="filters__content">
-                                <div class="filters__slider" data-enabled="true">
-                                  <ul class="filters__items">
-                                    <li class="filters__item">
-                                      <label class="filter">
-                                        <input class="filter__input" type="radio" name="category">
-                                        <span class="filter__icon"></span>
-                                        <span class="filter__name">Чай</span>
-                                        <span class="filter__nums">10</span>
-                                      </label>
-                                    </li>
-                                    <li class="filters__item">
-                                      <label class="filter">
-                                        <input class="filter__input" type="radio" name="category">
-                                        <span class="filter__icon"></span>
-                                        <span class="filter__name">Кофе</span>
-                                        <span class="filter__nums">23</span>
-                                      </label>
-                                    </li>
-                                    <li class="filters__item">
-                                      <label class="filter">
-                                        <input class="filter__input" type="radio" name="category">
-                                        <span class="filter__icon"></span>
-                                        <span class="filter__name">Кофемашины</span>
-                                        <span class="filter__nums">6</span>
-                                      </label>
-                                    </li>
-                                    <li class="filters__item">
-                                      <label class="filter">
-                                        <input class="filter__input" type="radio" name="category">
-                                        <span class="filter__icon"></span>
-                                        <span class="filter__name">Аксессуары</span>
-                                        <span class="filter__nums">10</span>
-                                      </label>
-                                    </li>
-                                    <li class="filters__item">
-                                      <label class="filter">
-                                        <input class="filter__input" type="radio" name="category">
-                                        <span class="filter__icon"></span>
-                                        <span class="filter__name">Системы для воды</span>
-                                        <span class="filter__nums">23</span>
-                                      </label>
-                                    </li>
-                                  </ul>
-                                  <div class="filters__scrollbar"></div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="filters__box">
-                              <button
-                                class="filters__subtitle _spoller-active h7"
-                                type="button"
-                                data-spoller
-                              >
-                                <span class="filters__name">Насыщенность кофе</span>
-                                <span
-                                  data-tippy-content="Для приготовления напитков можно использовать как молотый кофе, так и кофе в зёрнах."
-                                  aria-label="Для приготовления напитков можно использовать как молотый кофе, так и кофе в зёрнах."
-                                  tabindex="0"
-                                >
-                                </span>
-                              </button>
-                              <div class="filters__content">
-                                <div class="filters__slider" data-enabled="false">
-                                  <ul class="filters__items">
-                                    <li class="filters__item">
-                                      <label class="filter">
-                                        <input class="filter__input" type="checkbox">
-                                        <span class="filter__icon"></span>
-                                        <span class="filter__name">средний</span>
-                                        <span class="filter__nums">10</span>
-                                      </label>
-                                    </li>
-                                    <li class="filters__item">
-                                      <label class="filter">
-                                        <input class="filter__input" type="checkbox">
-                                        <span class="filter__icon"></span>
-                                        <span class="filter__name">крепкий</span>
-                                        <span class="filter__nums">23</span>
-                                      </label>
-                                    </li>
-                                  </ul>
-                                  <div class="filters__scrollbar"></div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="filters__box">
-                              <button class="filters__subtitle h7" type="button">Цена, ₽</button>
-                              <div class="smart-filter-input-group-number">
-                                <div
-                                  class="d-flex justify-content-between"
-                                  style="display: flex; justify-content: space-between"
-                                >
-                                  <div class="form-group" style="width: calc(50% - 10px)">
-                                    <div class="smart-filter-input-container">
-                                      <input
-                                        class="min-price form-control form-control-sm"
-                                        style="width: 100%"
-                                        type="number"
-                                        name="arrFilter_P1_MIN"
-                                        id="arrFilter_P1_MIN"
-                                        value=""
-                                        size="5"
-                                        placeholder="От"
-                                      />
-                                    </div>
-                                  </div>
-
-                                  <div class="form-group" style="width: calc(50% - 10px)">
-                                    <div class="smart-filter-input-container">
-                                      <input
-                                        class="max-price form-control form-control-sm"
-                                        style="width: 100%"
-                                        type="number"
-                                        name="arrFilter_P1_MAX"
-                                        id="arrFilter_P1_MAX"
-                                        value=""
-                                        size="5"
-                                        placeholder="До"
-                                      />
-                                    </div>
-                                  </div>
-                                </div>
-
-                                <div class="smart-filter-slider-track-container">
-                                  <div
-                                    class="smart-filter-slider-track"
-                                    id="drag_track_c4ca4238a0b923820dcc509a6f75849b"
-                                  >
-                                    <div class="smart-filter-slider-ruler p1">
-                                      <span>1&nbsp;700</span>
-                                    </div>
-                                    <div class="smart-filter-slider-ruler p2">
-                                      <span>2&nbsp;325</span>
-                                    </div>
-                                    <div class="smart-filter-slider-ruler p3">
-                                      <span>2&nbsp;950</span>
-                                    </div>
-                                    <div class="smart-filter-slider-ruler p4">
-                                      <span>3&nbsp;575</span>
-                                    </div>
-                                    <div class="smart-filter-slider-ruler p5">
-                                      <span>4&nbsp;200</span>
-                                    </div>
-                                    <div
-                                      class="smart-filter-slider-price-bar-vd"
-                                      style="left: 0; right: 0"
-                                      id="colorUnavailableActive_c4ca4238a0b923820dcc509a6f75849b"
-                                    ></div>
-                                    <div
-                                      class="smart-filter-slider-price-bar-vn"
-                                      style="left: 0%; right: 0%"
-                                      id="colorAvailableInactive_c4ca4238a0b923820dcc509a6f75849b"
-                                    ></div>
-                                    <div
-                                      class="smart-filter-slider-price-bar-v"
-                                      style="left: 30%; right: 0"
-                                      id="colorAvailableActive_c4ca4238a0b923820dcc509a6f75849b"
-                                    ></div>
-                                    <div
-                                      class="smart-filter-slider-range"
-                                      id="drag_tracker_c4ca4238a0b923820dcc509a6f75849b"
-                                      style="left: 0; right: 0"
-                                    >
-                                      <a
-                                        class="smart-filter-slider-handle left"
-                                        style="left: 30%"
-                                        href="javascript:void(0)"
-                                        id="left_slider_c4ca4238a0b923820dcc509a6f75849b"
-                                      ></a>
-                                      <a
-                                        class="smart-filter-slider-handle right"
-                                        style="right: 0"
-                                        href="javascript:void(0)"
-                                        id="right_slider_c4ca4238a0b923820dcc509a6f75849b"
-                                      ></a>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="filters__box">
-                              <button
-                                class="filters__subtitle _spoller-active h7"
-                                type="button"
-                                data-spoller
-                              >
-                                <span class="filters__name">Название фильтра в несколько строк</span>
-                              </button>
-                              <div class="filters__content">
-                                <div class="filters__slider" data-enabled="false">
-                                  <ul class="filters__items">
-                                    <li class="filters__item">
-                                      <label class="filter">
-                                        <input class="filter__input" type="checkbox">
-                                        <span class="filter__icon"></span>
-                                        <span class="filter__name">средний</span>
-                                        <span class="filter__nums">10</span>
-                                      </label>
-                                    </li>
-                                    <li class="filters__item">
-                                      <label class="filter">
-                                        <input class="filter__input" type="checkbox">
-                                        <span class="filter__icon"></span>
-                                        <span class="filter__name">крепкий</span>
-                                        <span class="filter__nums">23</span>
-                                      </label>
-                                    </li>
-                                    <li class="filters__item">
-                                      <label class="filter">
-                                        <input class="filter__input" type="checkbox">
-                                        <span class="filter__icon"></span>
-                                        <span class="filter__name">мягкий</span>
-                                        <span class="filter__nums">6</span>
-                                      </label>
-                                    </li>
-                                    <li class="filters__item">
-                                      <label class="filter">
-                                        <input class="filter__input" type="checkbox">
-                                        <span class="filter__icon"></span>
-                                        <span class="filter__name">средний</span>
-                                        <span class="filter__nums">10</span>
-                                      </label>
-                                    </li>
-                                    <li class="filters__item">
-                                      <label class="filter">
-                                        <input class="filter__input" type="checkbox">
-                                        <span class="filter__icon"></span>
-                                        <span class="filter__name">крепкий</span>
-                                        <span class="filter__nums">23</span>
-                                      </label>
-                                    </li>
-                                    <li class="filters__item">
-                                      <label class="filter">
-                                        <input class="filter__input" type="checkbox">
-                                        <span class="filter__icon"></span>
-                                        <span class="filter__name">мягкий</span>
-                                        <span class="filter__nums">6</span>
-                                      </label>
-                                    </li>
-                                    <li class="filters__item">
-                                      <label class="filter">
-                                        <input class="filter__input" type="checkbox">
-                                        <span class="filter__icon"></span>
-                                        <span class="filter__name">средний</span>
-                                        <span class="filter__nums">10</span>
-                                      </label>
-                                    </li>
-                                    <li class="filters__item">
-                                      <label class="filter">
-                                        <input class="filter__input" type="checkbox">
-                                        <span class="filter__icon"></span>
-                                        <span class="filter__name">крепкий</span>
-                                        <span class="filter__nums">23</span>
-                                      </label>
-                                    </li>
-                                    <li class="filters__item">
-                                      <label class="filter">
-                                        <input class="filter__input" type="checkbox">
-                                        <span class="filter__icon"></span>
-                                        <span class="filter__name">мягкий</span>
-                                        <span class="filter__nums">6</span>
-                                      </label>
-                                    </li>
-                                    <li class="filters__item">
-                                      <label class="filter">
-                                        <input class="filter__input" type="checkbox">
-                                        <span class="filter__icon"></span>
-                                        <span class="filter__name">средний</span>
-                                        <span class="filter__nums">10</span>
-                                      </label>
-                                    </li>
-                                    <li class="filters__item">
-                                      <label class="filter">
-                                        <input class="filter__input" type="checkbox">
-                                        <span class="filter__icon"></span>
-                                        <span class="filter__name">крепкий</span>
-                                        <span class="filter__nums">23</span>
-                                      </label>
-                                    </li>
-                                    <li class="filters__item">
-                                      <label class="filter">
-                                        <input class="filter__input" type="checkbox">
-                                        <span class="filter__icon"></span>
-                                        <span class="filter__name">мягкий</span>
-                                        <span class="filter__nums">6</span>
-                                      </label>
-                                    </li>
-                                  </ul>
-                                  <div class="filters__scrollbar"></div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="filters__box">
-                              <button
-                                class="filters__subtitle _spoller-active h7"
-                                type="button"
-                                data-spoller
-                              >
-                                <span class="filters__name">Насыщенность кофе</span>
-                              </button>
-                              <div class="filters__content">
-                                <div class="filters__slider" data-enabled="true">
-                                  <ul class="filters__items">
-                                    <li class="filters__item">
-                                      <span class="filters__empty">Нет результатов поиска</span>
-                                    </li>
-                                  </ul>
-                                  <div class="filters__scrollbar"></div>
-                                </div>
-                                <div class="filters__search">
-                                  <div class="input">
-                                    <input class="input__body" type="search" placeholder=" " value="cdu">
-                                    <span class="input__placeholder">Поиск</span>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="filters__action">
-                          <button class="filters__btn btn btn_green" type="submit">Показать</button>
-                          <button class="filters__btn btn btn_white" type="reset">Сбросить</button>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                </aside>
                 <div class="catalog__main">
-                  <div class="catalog__sorting sorting" data-da=".catalog__sidebar,767,last">
+                  <div class="catalog__sorting sorting">
                     <span class="sorting__placeholder">Сортировать по</span>
                     <select data-modifier="sorting" data-speed="0" data-show-selected>
                       <option value="По умолчанию" selected>По умолчанию</option>
@@ -629,29 +254,7 @@
                       <option value="Цена по возрастанию">Цена по возрастанию</option>
                     </select>
                   </div>
-                  <div class="catalog__filtered filtered">
-                    <ul class="filtered__list">
-                      <li class="filtered__item">
-                        <a class="filtered__tag" href="#">Средний</a>
-                      </li>
-                      <li class="filtered__item">
-                        <a class="filtered__tag" href="#">С кислинкой</a>
-                      </li>
-                      <li class="filtered__item">
-                        <a class="filtered__tag" href="#">С горчинкой</a>
-                      </li>
-                      <li class="filtered__item">
-                        <a class="filtered__tag" href="#">Смесь арабика/робуста</a>
-                      </li>
-                      <li class="filtered__item">
-                        <a class="filtered__tag" href="#">Италия</a>
-                      </li>
-                      <li class="filtered__item">
-                        <a class="filtered__tag filtered__tag_reset" href="#">Сбросить фильтры (5)</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <ul class="catalog__items">
+                  <ul class="catalog__items catalog__items_fill">
                     <li class="catalog__item">
                       <div class="product-card">
                         <ul class="promos promos_card">
@@ -1472,27 +1075,6 @@
                     </ul>
                   </nav>
                 </div>
-              </div>
-              <div class="subscribe">
-                <div class="subscribe__content">
-                  <h3 class="subscribe__title h4">Оформи подписку</h3>
-                  <p class="subscribe__text">Подписывайся на рассылку и будь в курсе скидок и акций</p>
-                </div>
-                <form class="subscribe__form" action="#">
-                  <input class="subscribe__input" type="email" placeholder="Ваш e-mail" required>
-                  <div class="subscribe__action">
-                    <label class="subscribe__agree agree agree_light">
-                      <input class="agree__checkbox" type="checkbox">
-                      <span class="agree__icon"></span>
-                      <span class="agree__text">
-                        Я соглашаюсь получать рекламные и иные маркетинговые сообщения от «Natem» на условиях
-                        <a href="./policy.html" target="_blank">Политики конфиденциальности</a>
-                        и <a href="./agree.html" target="_blank">Пользовательского соглашения</a>.
-                      </span>
-                    </label>
-                    <button class="subscribe__btn btn btn_white" type="submit">Подписаться</button>
-                  </div>
-                </form>
               </div>
             </div>
           </div>

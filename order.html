@@ -111,7 +111,7 @@
                         <a class="menu__link" href="./catalog-tea.html">Аксессуары</a>
                       </li>
                       <li class="menu__item">
-                        <a class="menu__link menu__link_accent" href="./catalog-tea.html">
+                        <a class="menu__link menu__link_accent" href="./catalog-promos.html">
                           Спецпредложения
                         </a>
                       </li>
@@ -239,7 +239,7 @@
                       <button class="form-tabs__title" type="button">Юр. лицо ООО</button>
                       <button class="form-tabs__title" type="button">Юр. лицо ИП</button>
                     </nav>
-                    <div class="form-tabs__content" data-tabs-body>
+                    <div class="form-tabs__content" data-tabs-body data-one-select>
                       <div class="form-tabs__body">
                         <div class="form-box">
                           <span class="form-box__name h7">Контактные данные</span>
@@ -387,7 +387,54 @@
                         </div>
                         <div class="form-box">
                           <span class="form-box__name h7">Дата и время доставки</span>
-                          <div class="form-box__body"></div>
+                          <div class="form-box__body">
+                            <div class="inputs" data-one-select>
+                              <div class="inputs__item inputs__item_medium">
+                                <select
+                                  data-modifier="form"
+                                  data-speed="0"
+                                  data-scroll
+                                  data-show-selected
+                                  data-pseudo-label="Выберите дату доставки"
+                                >
+                                  <option value="09 декабря" selected>09 декабря</option>
+                                  <option value="10 декабря">10 декабря</option>
+                                  <option value="11 декабря">11 декабря</option>
+                                  <option value="12 декабря">12 декабря</option>
+                                  <option value="13 декабря">13 декабря</option>
+                                  <option value="14 декабря">14 декабря</option>
+                                  <option value="15 декабря">15 декабря</option>
+                                  <option value="16 декабря">16 декабря</option>
+                                  <option value="17 декабря">17 декабря</option>
+                                  <option value="18 декабря">18 декабря</option>
+                                  <option value="19 декабря">19 декабря</option>
+                                </select>
+                              </div>
+                              <div class="inputs__item inputs__item_medium">
+                                <select
+                                  data-modifier="form"
+                                  data-speed="0"
+                                  data-scroll
+                                  data-show-selected
+                                  data-pseudo-label="Время доставки"
+                                >
+                                  <option value="9:10" selected>9:10</option>
+                                  <option value="9:40">9:40</option>
+                                  <option value="10:10">10:10</option>
+                                  <option value="10:40">10:40</option>
+                                  <option value="11:10">11:10</option>
+                                  <option value="11:40">11:40</option>
+                                  <option value="12:10">12:10</option>
+                                  <option value="12:40">12:40</option>
+                                  <option value="13:10">13:10</option>
+                                  <option value="13:40">13:40</option>
+                                  <option value="14:10">14:10</option>
+                                  <option value="14:40">14:40</option>
+                                  <option value="15:10">15:10</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                         <div class="form-box">
                           <span class="form-box__name h7">Оплата</span>
@@ -464,13 +511,13 @@
                                 <div class="input input_textarea">
                                   <textarea class="input__body" placeholder=" "></textarea>
                                   <span class="input__placeholder">
-                                    Комментарий к заказу (вы можете указать убодное время доставки)
+                                    Комментарий к заказу (вы можете указать удобное время доставки)
                                   </span>
                                 </div>
                               </div>
                             </div>
                             <label class="form-box__agree agree agree_dark">
-                              <input class="agree__checkbox" type="checkbox" />
+                              <input class="agree__checkbox" type="checkbox">
                               <span class="agree__icon"></span>
                               <span class="agree__text">
                                 Я соглашаюсь получать рекламные и иные маркетинговые сообщения от «Natem»
@@ -594,7 +641,54 @@
                         </div>
                         <div class="form-box">
                           <span class="form-box__name h7">Дата и время доставки</span>
-                          <div class="form-box__body"></div>
+                          <div class="form-box__body">
+                            <div class="inputs">
+                              <div class="inputs__item inputs__item_medium">
+                                <select
+                                  data-modifier="form"
+                                  data-speed="0"
+                                  data-scroll
+                                  data-show-selected
+                                  data-pseudo-label="Выберите дату доставки"
+                                >
+                                  <option value="09 декабря" selected>09 декабря</option>
+                                  <option value="10 декабря">10 декабря</option>
+                                  <option value="11 декабря">11 декабря</option>
+                                  <option value="12 декабря">12 декабря</option>
+                                  <option value="13 декабря">13 декабря</option>
+                                  <option value="14 декабря">14 декабря</option>
+                                  <option value="15 декабря">15 декабря</option>
+                                  <option value="16 декабря">16 декабря</option>
+                                  <option value="17 декабря">17 декабря</option>
+                                  <option value="18 декабря">18 декабря</option>
+                                  <option value="19 декабря">19 декабря</option>
+                                </select>
+                              </div>
+                              <div class="inputs__item inputs__item_medium">
+                                <select
+                                  data-modifier="form"
+                                  data-speed="0"
+                                  data-scroll
+                                  data-show-selected
+                                  data-pseudo-label="Время доставки"
+                                >
+                                  <option value="9:10" selected>9:10</option>
+                                  <option value="9:40">9:40</option>
+                                  <option value="10:10">10:10</option>
+                                  <option value="10:40">10:40</option>
+                                  <option value="11:10">11:10</option>
+                                  <option value="11:40">11:40</option>
+                                  <option value="12:10">12:10</option>
+                                  <option value="12:40">12:40</option>
+                                  <option value="13:10">13:10</option>
+                                  <option value="13:40">13:40</option>
+                                  <option value="14:10">14:10</option>
+                                  <option value="14:40">14:40</option>
+                                  <option value="15:10">15:10</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                         <div class="form-box">
                           <span class="form-box__name h7">Оплата</span>
@@ -621,13 +715,13 @@
                                 <div class="input input_textarea">
                                   <textarea class="input__body" placeholder=" "></textarea>
                                   <span class="input__placeholder">
-                                    Комментарий к заказу (вы можете указать убодное время доставки)
+                                    Комментарий к заказу (вы можете указать удобное время доставки)
                                   </span>
                                 </div>
                               </div>
                             </div>
                             <label class="form-box__agree agree agree_dark">
-                              <input class="agree__checkbox" type="checkbox" />
+                              <input class="agree__checkbox" type="checkbox">
                               <span class="agree__icon"></span>
                               <span class="agree__text">
                                 Я соглашаюсь получать рекламные и иные маркетинговые сообщения от «Natem»
@@ -765,7 +859,7 @@
                       <a class="footer-menu__link" href="./contacts.html">Контакты</a>
                     </li>
                     <li class="footer-menu__item">
-                      <a class="footer-menu__link" href="./catalog-tea.html">Спецпредложения</a>
+                      <a class="footer-menu__link" href="./catalog-promos.html">Спецпредложения</a>
                     </li>
                   </ul>
                 </div>

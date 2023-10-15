@@ -10,7 +10,7 @@
     <link rel="apple-touch-icon" sizes="152x152" href="./img/content/touch-icon-ipad.png">
     <link rel="apple-touch-icon" sizes="167x167" href="./img/content/touch-icon-ipad-pro.png">
     <link rel="apple-touch-icon" sizes="180x180" href="./img/content/touch-icon-iphone-retina.png">
-    <title>Корзина</title>
+    <title>Оставить заявку</title>
     <link rel="stylesheet" href="./css/style.min.css">
     <script src="./js/script.min.js" defer></script>
   </head>
@@ -222,365 +222,191 @@
       </header>
 
       <main class="page">
-        <section class="cart">
+        <section class="request">
           <div class="container">
-            <div class="cart__body">
+            <div class="request__body">
               <ul class="breadcrumbs">
                 <li class="breadcrumbs__item">
-                  <a class="breadcrumbs__link" href="./index.html">Главная</a>
-                </li>
-                <li class="breadcrumbs__item">
-                  <span class="breadcrumbs__link">Корзина</span>
+                  <a class="breadcrumbs__link breadcrumbs__link_back" href="./services.html">Назад</a>
                 </li>
               </ul>
-              <div class="cart__head">
-                <h2 class="cart__title h4">Корзина</h2>
-                <button class="cart__btn" type="button">
-                  Очистить
-                  <svg class="cart__btn-icon">
-                    <use xlink:href="./img/icons/icons.svg#close"></use>
-                  </svg>
-                </button>
-              </div>
-              <div class="cart__main">
-                <!-- <div class="empty-cart">
-                  <p class="empty-cart__text">
-                    В корзине пока ничего нет. Выберите категорию и перейдите в каталог
+              <div class="request__main">
+                <form class="form" action="#" data-one-select>
+                  <h2 class="form__title h4">Оставить заявку</h2>
+                  <p class="form__text">
+                    Оказываем сервис и услуги ремонта кофемашин Nespresso и ряда других брендов кофейной
+                    техники клиентам компании.
                   </p>
-                  <a class="empty-cart__btn btn btn_white" href="./index.html">На главную</a>
-                </div> -->
-                <ul class="cart__list">
-                  <li class="cart__item">
-                    <div class="cart-card">
-                      <a class="cart-card__main" href="./product.html">
-                        <div class="cart-card__img-box">
-                          <picture><source srcset="./img/content/catalog/tea-1.webp" type="image/webp"><img class="cart-card__img" src="./img/content/catalog/tea-1.jpg" alt="image"></picture>
-                        </div>
-                        <div class="cart-card__info">
-                          <ul class="cart-card__specs">
-                            <li class="cart-card__spec">Арт. 123456</li>
-                            <li class="cart-card__spec">Gran Caffè Garibaldi</li>
-                          </ul>
-                          <h3 class="cart-card__name">QT Iced Tea Pouches - Summer Peach Tea</h3>
-                          <div class="cart-card__prices prices">
-                            <div class="prices__sale">800 ₽</div>
-                            <div class="prices__info">
-                              <div class="prices__main">253 498 ₽</div>
-                              <div class="prices__desc"><span>за штуку</span><span>35 ₽</span></div>
-                            </div>
+                  <div class="form-box">
+                    <span class="form-box__name h7">Контактные данные</span>
+                    <div class="form-box__body">
+                      <div class="inputs">
+                        <div class="inputs__item inputs__item_medium">
+                          <div class="input">
+                            <input class="input__body" type="text" name="name" placeholder=" " required>
+                            <span class="input__placeholder">ФИО отправителя</span>
                           </div>
                         </div>
-                      </a>
-                      <div class="cart-card__action cart-action">
-                        <div class="cart-action__quantity quantity">
-                          <button
-                            class="quantity__button quantity__button_minus"
-                            type="button"
-                            aria-label="Уменьшить"
-                            title="Уменьшить"
+                        <div class="inputs__item inputs__item_medium">
+                          <select
+                            data-modifier="form"
+                            data-speed="0"
+                            data-scroll
+                            data-show-selected
+                            data-pseudo-label="Город"
                           >
-                            <svg class="quantity__icon">
-                              <use xlink:href="./img/icons/icons.svg#minus"></use>
-                            </svg>
-                          </button>
-                          <div class="quantity__input-box">
-                            <input class="quantity__input" type="text" value="1">
-                          </div>
-                          <button
-                            class="quantity__button quantity__button_plus"
-                            type="button"
-                            aria-label="Увеличить"
-                            title="Увеличить"
-                          >
-                            <svg class="quantity__icon">
-                              <use xlink:href="./img/icons/icons.svg#plus"></use>
-                            </svg>
-                          </button>
+                            <option value="Санкт-Петербург">Санкт-Петербург</option>
+                            <option value="Москва">Москва</option>
+                            <option value="Новосибирск">Новосибирск</option>
+                            <option value="Екатеринбург">Екатеринбург</option>
+                            <option value="Казань">Казань</option>
+                            <option value="Нижний Новгород">Нижний Новгород</option>
+                            <option value="Челябинск">Челябинск</option>
+                            <option value="Красноярск">Красноярск</option>
+                            <option value="Самара">Самара</option>
+                            <option value="Уфа">Уфа</option>
+                            <option value="Ростов-на-Дону">Ростов-на-Дону</option>
+                            <option value="Омск">Омск</option>
+                            <option value="Краснодар">Краснодар</option>
+                            <option value="Воронеж">Воронеж</option>
+                            <option value="Волгоград">Волгоград</option>
+                            <option value="Пермь">Пермь</option>
+                          </select>
                         </div>
-                        <ul class="cart-action__items">
-                          <li class="cart-action__item">
-                            <button
-                              class="favorite-btn favorite-btn_cart"
-                              type="button"
-                              aria-label="Добавить в избранное"
-                              title="Добавить в избранное"
-                            >
-                              <svg class="favorite-btn__icon">
-                                <use xlink:href="./img/icons/icons.svg#favorite"></use>
-                              </svg>
-                            </button>
-                          </li>
-                          <li class="cart-action__item">
-                            <button
-                              class="cart-action__btn"
-                              type="button"
-                              aria-label="Убрать из карзины"
-                              title="Убрать из карзины"
-                            >
-                              <svg class="cart-action__icon">
-                                <use xlink:href="./img/icons/icons.svg#close"></use>
-                              </svg>
-                            </button>
-                          </li>
-                        </ul>
+                        <div class="inputs__item inputs__item_medium">
+                          <div class="input">
+                            <input class="input__body" type="tel" name="tel" placeholder=" " required>
+                            <span class="input__placeholder">Телефон</span>
+                          </div>
+                        </div>
+                        <div class="inputs__item inputs__item_medium">
+                          <div class="input">
+                            <input class="input__body" type="email" name="email" placeholder=" " required>
+                            <span class="input__placeholder">Email</span>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </li>
-                  <li class="cart__item">
-                    <div class="cart-card">
-                      <a class="cart-card__main" href="./product.html">
-                        <div class="cart-card__img-box">
-                          <picture><source srcset="./img/content/catalog/tea-6.webp" type="image/webp"><img class="cart-card__img" src="./img/content/catalog/tea-6.jpg" alt="image"></picture>
-                        </div>
-                        <div class="cart-card__info">
-                          <ul class="cart-card__specs">
-                            <li class="cart-card__spec">Арт. 123456</li>
-                            <li class="cart-card__spec">Gran Caffè Garibaldi</li>
-                          </ul>
-                          <h3 class="cart-card__name">QT Iced Tea Pouches - Summer Peach Tea</h3>
-                          <div class="cart-card__prices prices">
-                            <div class="prices__info">
-                              <div class="prices__main">253 498 ₽</div>
-                              <div class="prices__desc"><span>за штуку</span><span>35 ₽</span></div>
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                      <div class="cart-card__action cart-action">
-                        <div class="cart-action__quantity quantity">
-                          <button
-                            class="quantity__button quantity__button_minus"
-                            type="button"
-                            aria-label="Уменьшить"
-                            title="Уменьшить"
-                          >
-                            <svg class="quantity__icon">
-                              <use xlink:href="./img/icons/icons.svg#minus"></use>
-                            </svg>
-                          </button>
-                          <div class="quantity__input-box">
-                            <input class="quantity__input" type="text" value="1">
-                          </div>
-                          <button
-                            class="quantity__button quantity__button_plus"
-                            type="button"
-                            aria-label="Увеличить"
-                            title="Увеличить"
-                          >
-                            <svg class="quantity__icon">
-                              <use xlink:href="./img/icons/icons.svg#plus"></use>
-                            </svg>
-                          </button>
-                        </div>
-                        <ul class="cart-action__items">
-                          <li class="cart-action__item">
-                            <button
-                              class="favorite-btn favorite-btn_cart"
-                              type="button"
-                              aria-label="Добавить в избранное"
-                              title="Добавить в избранное"
-                            >
-                              <svg class="favorite-btn__icon">
-                                <use xlink:href="./img/icons/icons.svg#favorite"></use>
-                              </svg>
-                            </button>
-                          </li>
-                          <li class="cart-action__item">
-                            <button
-                              class="cart-action__btn"
-                              type="button"
-                              aria-label="Убрать из карзины"
-                              title="Убрать из карзины"
-                            >
-                              <svg class="cart-action__icon">
-                                <use xlink:href="./img/icons/icons.svg#close"></use>
-                              </svg>
-                            </button>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="cart__item">
-                    <div class="cart-card">
-                      <a class="cart-card__main" href="./product.html">
-                        <div class="cart-card__img-box">
-                          <picture><source srcset="./img/content/catalog/coffee-4.webp" type="image/webp"><img class="cart-card__img" src="./img/content/catalog/coffee-4.jpg" alt="image"></picture>
-                        </div>
-                        <div class="cart-card__info">
-                          <ul class="cart-card__specs">
-                            <li class="cart-card__spec">Арт. 123456</li>
-                            <li class="cart-card__spec">Gran Caffè Garibaldi</li>
-                          </ul>
-                          <h3 class="cart-card__name">Кофе-капсулы Garibaldi Blend Colombia, 10 уп.</h3>
-                          <div class="cart-card__prices prices">
-                            <div class="prices__info">
-                              <div class="prices__main">2 498 ₽</div>
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                      <div class="cart-card__action cart-action">
-                        <div class="cart-action__quantity quantity">
-                          <button
-                            class="quantity__button quantity__button_minus"
-                            type="button"
-                            aria-label="Уменьшить"
-                            title="Уменьшить"
-                          >
-                            <svg class="quantity__icon">
-                              <use xlink:href="./img/icons/icons.svg#minus"></use>
-                            </svg>
-                          </button>
-                          <div class="quantity__input-box">
-                            <input class="quantity__input" type="text" value="1">
-                          </div>
-                          <button
-                            class="quantity__button quantity__button_plus"
-                            type="button"
-                            aria-label="Увеличить"
-                            title="Увеличить"
-                          >
-                            <svg class="quantity__icon">
-                              <use xlink:href="./img/icons/icons.svg#plus"></use>
-                            </svg>
-                          </button>
-                        </div>
-                        <ul class="cart-action__items">
-                          <li class="cart-action__item">
-                            <button
-                              class="favorite-btn favorite-btn_cart"
-                              type="button"
-                              aria-label="Добавить в избранное"
-                              title="Добавить в избранное"
-                            >
-                              <svg class="favorite-btn__icon">
-                                <use xlink:href="./img/icons/icons.svg#favorite"></use>
-                              </svg>
-                            </button>
-                          </li>
-                          <li class="cart-action__item">
-                            <button
-                              class="cart-action__btn"
-                              type="button"
-                              aria-label="Убрать из карзины"
-                              title="Убрать из карзины"
-                            >
-                              <svg class="cart-action__icon">
-                                <use xlink:href="./img/icons/icons.svg#close"></use>
-                              </svg>
-                            </button>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="cart__item">
-                    <div class="cart-card">
-                      <a class="cart-card__main" href="./product.html">
-                        <div class="cart-card__img-box">
-                          <picture><source srcset="./img/content/catalog/coffee-9.webp" type="image/webp"><img class="cart-card__img" src="./img/content/catalog/coffee-9.jpg" alt="image"></picture>
-                        </div>
-                        <div class="cart-card__info">
-                          <ul class="cart-card__specs">
-                            <li class="cart-card__spec">Арт. 123456</li>
-                            <li class="cart-card__spec">Gran Caffè Garibaldi</li>
-                          </ul>
-                          <h3 class="cart-card__name">Кофе-капсулы Garibaldi Blend Colombia, 10 уп.</h3>
-                          <div class="cart-card__prices prices">
-                            <div class="prices__sale">800 ₽</div>
-                            <div class="prices__info">
-                              <div class="prices__main">253 498 ₽</div>
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                      <div class="cart-card__action cart-action">
-                        <div class="cart-action__quantity quantity">
-                          <button
-                            class="quantity__button quantity__button_minus"
-                            type="button"
-                            aria-label="Уменьшить"
-                            title="Уменьшить"
-                          >
-                            <svg class="quantity__icon">
-                              <use xlink:href="./img/icons/icons.svg#minus"></use>
-                            </svg>
-                          </button>
-                          <div class="quantity__input-box">
-                            <input class="quantity__input" type="text" value="1">
-                          </div>
-                          <button
-                            class="quantity__button quantity__button_plus"
-                            type="button"
-                            aria-label="Увеличить"
-                            title="Увеличить"
-                          >
-                            <svg class="quantity__icon">
-                              <use xlink:href="./img/icons/icons.svg#plus"></use>
-                            </svg>
-                          </button>
-                        </div>
-                        <ul class="cart-action__items">
-                          <li class="cart-action__item">
-                            <button
-                              class="favorite-btn favorite-btn_cart"
-                              type="button"
-                              aria-label="Добавить в избранное"
-                              title="Добавить в избранное"
-                            >
-                              <svg class="favorite-btn__icon">
-                                <use xlink:href="./img/icons/icons.svg#favorite"></use>
-                              </svg>
-                            </button>
-                          </li>
-                          <li class="cart-action__item">
-                            <button
-                              class="cart-action__btn"
-                              type="button"
-                              aria-label="Убрать из карзины"
-                              title="Убрать из карзины"
-                            >
-                              <svg class="cart-action__icon">
-                                <use xlink:href="./img/icons/icons.svg#close"></use>
-                              </svg>
-                            </button>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-                <div class="cart__summary summary">
-                  <div class="summary__top">
-                    <h5 class="summary__title h4">Итог</h5>
-                    <dl class="summary__list">
-                      <div class="summary__item">
-                        <dt class="summary__name">Выгода</dt>
-                        <dd class="summary__desc">12 052 ₽</dd>
-                      </div>
-                      <div class="summary__item">
-                        <dt class="summary__name">Доставка</dt>
-                        <dd class="summary__desc summary__desc_mark">0 ₽</dd>
-                      </div>
-                    </dl>
                   </div>
-                  <div class="summary__main">
-                    <dl class="summary__list">
-                      <div class="summary__item">
-                        <dt class="summary__name">Всего</dt>
-                        <dd class="summary__desc">13 товаров 5.4кг</dd>
+                  <div class="form-box">
+                    <span class="form-box__name h7">Детали заявки</span>
+                    <div class="form-box__body">
+                      <div class="inputs">
+                        <div class="inputs__item inputs__item_medium">
+                          <select
+                            data-modifier="form"
+                            data-speed="0"
+                            data-scroll
+                            data-show-selected
+                            data-pseudo-label="Бренд кофемашины"
+                          >
+                            <option value="Nespresso">Nespresso</option>
+                            <option value="Nespresso">Nespresso</option>
+                            <option value="Nespresso">Nespresso</option>
+                            <option value="Nespresso">Nespresso</option>
+                            <option value="Nespresso">Nespresso</option>
+                            <option value="Nespresso">Nespresso</option>
+                            <option value="Nespresso">Nespresso</option>
+                            <option value="Nespresso">Nespresso</option>
+                          </select>
+                        </div>
+                        <div class="inputs__item inputs__item_medium">
+                          <div class="input">
+                            <input class="input__body" type="text" placeholder=" ">
+                            <span class="input__placeholder">Серийный номер кофемашины</span>
+                          </div>
+                        </div>
+                        <div class="inputs__item">
+                          <select
+                            data-modifier="form"
+                            data-speed="0"
+                            data-scroll
+                            data-show-selected
+                            data-pseudo-label="Модель кофемашины"
+                          >
+                            <option value="De’Longhi Nespresso Essenza">
+                              De’Longhi Nespresso Essenza
+                            </option>
+                            <option value="De’Longhi Nespresso Essenza">
+                              De’Longhi Nespresso Essenza
+                            </option>
+                            <option value="De’Longhi Nespresso Essenza">
+                              De’Longhi Nespresso Essenza
+                            </option>
+                            <option value="De’Longhi Nespresso Essenza">
+                              De’Longhi Nespresso Essenza
+                            </option>
+                            <option value="De’Longhi Nespresso Essenza">
+                              De’Longhi Nespresso Essenza
+                            </option>
+                            <option value="De’Longhi Nespresso Essenza">
+                              De’Longhi Nespresso Essenza
+                            </option>
+                            <option value="De’Longhi Nespresso Essenza">
+                              De’Longhi Nespresso Essenza
+                            </option>
+                            <option value="De’Longhi Nespresso Essenza">
+                              De’Longhi Nespresso Essenza
+                            </option>
+                          </select>
+                        </div>
+                        <div class="inputs__item">
+                          <select
+                            data-modifier="form"
+                            data-speed="0"
+                            data-scroll
+                            data-show-selected
+                            data-pseudo-label="Вид неисправности"
+                          >
+                            <option value="Течь воды из под кофемашины">
+                              Течь воды из под кофемашины
+                            </option>
+                            <option value="Течь воды из под кофемашины">
+                              Течь воды из под кофемашины
+                            </option>
+                            <option value="Течь воды из под кофемашины">
+                              Течь воды из под кофемашины
+                            </option>
+                            <option value="Течь воды из под кофемашины">
+                              Течь воды из под кофемашины
+                            </option>
+                            <option value="Течь воды из под кофемашины">
+                              Течь воды из под кофемашины
+                            </option>
+                            <option value="Течь воды из под кофемашины">
+                              Течь воды из под кофемашины
+                            </option>
+                            <option value="Течь воды из под кофемашины">
+                              Течь воды из под кофемашины
+                            </option>
+                            <option value="Течь воды из под кофемашины">
+                              Течь воды из под кофемашины
+                            </option>
+                          </select>
+                        </div>
+                        <div class="inputs__item">
+                          <div class="input input_textarea">
+                            <textarea class="input__body" placeholder=" "></textarea>
+                            <span class="input__placeholder">
+                              Комментарий к заказу (вы можете указать удобное время доставки)
+                            </span>
+                          </div>
+                        </div>
                       </div>
-                    </dl>
-                    <div class="summary__result">12 052 ₽</div>
+                      <label class="form-box__agree agree agree_dark">
+                        <input class="agree__checkbox" type="checkbox">
+                        <span class="agree__icon"></span>
+                        <span class="agree__text">
+                          Я соглашаюсь получать рекламные и иные маркетинговые сообщения от «Natem» на
+                          условиях
+                          <a href="./policy.html" target="_blank">Политики конфиденциальности</a>
+                          и <a href="./agree.html" target="_blank">Пользовательского соглашения</a>.
+                        </span>
+                      </label>
+                      <button class="form-box__btn btn btn_green" type="submit">Оформить заявку</button>
+                    </div>
                   </div>
-                  <div class="summary__submit">
-                    <button class="summary__btn btn btn_green" type="button" disabled>
-                      Оформить заказ
-                    </button>
-                    <p class="summary__error">Минимальная сумма заказа 2000 ₽</p>
-                  </div>
-                </div>
+                </form>
               </div>
             </div>
           </div>
