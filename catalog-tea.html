@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="theme-color" content="#F7FAFF">
     <link rel="icon" href="./img/content/favicon.svg">
     <link rel="mask-icon" href="./img/content/favicon.svg" color="#F7FAFF">
@@ -283,6 +283,8 @@
                           </div>
                           <div class="filters__main">
                             <div class="filters__box">
+                              <!-- класс _spoller-active если фильтры раскрыты сразу -->
+                              <!-- data-spoller убираем если блок не раскрывающийся -->
                               <button
                                 class="filters__subtitle _spoller-active h7"
                                 type="button"
@@ -291,8 +293,10 @@
                                 <span class="filters__name">Категории</span>
                               </button>
                               <div class="filters__content">
+                                <!-- data-enabled - раскрыт ли список сразу (true/false) -->
+                                <!-- data-max - сколько чекбоксов показывать в свернутом списке -->
                                 <div class="filters__slider" data-enabled="true">
-                                  <ul class="filters__items">
+                                  <ul class="filters__items" data-max="5">
                                     <li class="filters__item">
                                       <label class="filter">
                                         <input class="filter__input" type="radio" name="category">
@@ -334,7 +338,6 @@
                                       </label>
                                     </li>
                                   </ul>
-                                  <div class="filters__scrollbar"></div>
                                 </div>
                               </div>
                             </div>
@@ -354,7 +357,7 @@
                               </button>
                               <div class="filters__content">
                                 <div class="filters__slider" data-enabled="false">
-                                  <ul class="filters__items">
+                                  <ul class="filters__items" data-max="4">
                                     <li class="filters__item">
                                       <label class="filter">
                                         <input class="filter__input" type="checkbox">
@@ -372,7 +375,6 @@
                                       </label>
                                     </li>
                                   </ul>
-                                  <div class="filters__scrollbar"></div>
                                 </div>
                               </div>
                             </div>
@@ -477,11 +479,11 @@
                                 type="button"
                                 data-spoller
                               >
-                                <span class="filters__name">Название фильтра в несколько строк</span>
+                                <span class="filters__name">Название фильтра</span>
                               </button>
                               <div class="filters__content">
                                 <div class="filters__slider" data-enabled="false">
-                                  <ul class="filters__items">
+                                  <ul class="filters__items" data-max="4">
                                     <li class="filters__item">
                                       <label class="filter">
                                         <input class="filter__input" type="checkbox">
@@ -579,7 +581,117 @@
                                       </label>
                                     </li>
                                   </ul>
-                                  <div class="filters__scrollbar"></div>
+                                </div>
+                                <div class="filters__search">
+                                  <div class="input">
+                                    <input class="input__body" type="search" placeholder=" " value="cdu">
+                                    <span class="input__placeholder">Поиск</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="filters__box">
+                              <button
+                                class="filters__subtitle _spoller-active h7"
+                                type="button"
+                                data-spoller
+                              >
+                                <span class="filters__name">
+                                  Длинное название фильтра в несколько строк
+                                </span>
+                              </button>
+                              <div class="filters__content">
+                                <div class="filters__slider" data-enabled="true">
+                                  <ul class="filters__items" data-max="4">
+                                    <li class="filters__item">
+                                      <label class="filter">
+                                        <input class="filter__input" type="checkbox">
+                                        <span class="filter__icon"></span>
+                                        <span class="filter__name">средний</span>
+                                        <span class="filter__nums">10</span>
+                                      </label>
+                                    </li>
+                                    <li class="filters__item">
+                                      <label class="filter">
+                                        <input class="filter__input" type="checkbox">
+                                        <span class="filter__icon"></span>
+                                        <span class="filter__name">крепкий</span>
+                                        <span class="filter__nums">23</span>
+                                      </label>
+                                    </li>
+                                    <li class="filters__item">
+                                      <label class="filter">
+                                        <input class="filter__input" type="checkbox">
+                                        <span class="filter__icon"></span>
+                                        <span class="filter__name">средний</span>
+                                        <span class="filter__nums">10</span>
+                                      </label>
+                                    </li>
+                                    <li class="filters__item">
+                                      <label class="filter">
+                                        <input class="filter__input" type="checkbox">
+                                        <span class="filter__icon"></span>
+                                        <span class="filter__name">крепкий</span>
+                                        <span class="filter__nums">23</span>
+                                      </label>
+                                    </li>
+                                    <li class="filters__item">
+                                      <label class="filter">
+                                        <input class="filter__input" type="checkbox">
+                                        <span class="filter__icon"></span>
+                                        <span class="filter__name">мягкий</span>
+                                        <span class="filter__nums">6</span>
+                                      </label>
+                                    </li>
+                                    <li class="filters__item">
+                                      <label class="filter">
+                                        <input class="filter__input" type="checkbox">
+                                        <span class="filter__icon"></span>
+                                        <span class="filter__name">средний</span>
+                                        <span class="filter__nums">10</span>
+                                      </label>
+                                    </li>
+                                    <li class="filters__item">
+                                      <label class="filter">
+                                        <input class="filter__input" type="checkbox">
+                                        <span class="filter__icon"></span>
+                                        <span class="filter__name">крепкий</span>
+                                        <span class="filter__nums">23</span>
+                                      </label>
+                                    </li>
+                                    <li class="filters__item">
+                                      <label class="filter">
+                                        <input class="filter__input" type="checkbox">
+                                        <span class="filter__icon"></span>
+                                        <span class="filter__name">мягкий</span>
+                                        <span class="filter__nums">6</span>
+                                      </label>
+                                    </li>
+                                    <li class="filters__item">
+                                      <label class="filter">
+                                        <input class="filter__input" type="checkbox">
+                                        <span class="filter__icon"></span>
+                                        <span class="filter__name">средний</span>
+                                        <span class="filter__nums">10</span>
+                                      </label>
+                                    </li>
+                                    <li class="filters__item">
+                                      <label class="filter">
+                                        <input class="filter__input" type="checkbox">
+                                        <span class="filter__icon"></span>
+                                        <span class="filter__name">крепкий</span>
+                                        <span class="filter__nums">23</span>
+                                      </label>
+                                    </li>
+                                    <li class="filters__item">
+                                      <label class="filter">
+                                        <input class="filter__input" type="checkbox">
+                                        <span class="filter__icon"></span>
+                                        <span class="filter__name">мягкий</span>
+                                        <span class="filter__nums">6</span>
+                                      </label>
+                                    </li>
+                                  </ul>
                                 </div>
                               </div>
                             </div>
@@ -593,12 +705,11 @@
                               </button>
                               <div class="filters__content">
                                 <div class="filters__slider" data-enabled="true">
-                                  <ul class="filters__items">
+                                  <ul class="filters__items" data-max="4">
                                     <li class="filters__item">
                                       <span class="filters__empty">Нет результатов поиска</span>
                                     </li>
                                   </ul>
-                                  <div class="filters__scrollbar"></div>
                                 </div>
                                 <div class="filters__search">
                                   <div class="input">
