@@ -557,15 +557,49 @@
 
     <div class="popup" id="contact-form">
       <div class="popup__body">
-        <button
-          class="popup__close"
-          aria-label="Закрыть окно"
-          title="Закрыть окно"
-          type="button"
-          data-close
-        ></button>
+        <button class="popup__close" aria-label="Закрыть окно" title="Закрыть окно" type="button" data-close>
+          <svg class="popup__icon">
+            <use xlink:href="./img/icons/icons.svg#close"></use>
+          </svg>
+        </button>
         <div class="popup__inner">
-          <!-- Обратный звонок -->
+          <form class="callback" action="#">
+            <h4 class="callback__title h5">Форма обратной связи</h4>
+            <div class="callback__inputs">
+              <div class="callback__input">
+                <div class="input">
+                  <input class="input__body" type="text" name="name" placeholder=" " required>
+                  <span class="input__placeholder">Ваше имя</span>
+                </div>
+              </div>
+              <div class="callback__input">
+                <div class="input">
+                  <input class="input__body" type="tel" name="tel" placeholder=" " required>
+                  <span class="input__placeholder">Телефон</span>
+                </div>
+              </div>
+            </div>
+            <button class="callback__btn btn btn_green" type="submit">Отправить</button>
+            <label class="callback__agree agree agree_dark">
+              <input class="agree__checkbox" type="checkbox">
+              <span class="agree__icon"></span>
+              <span class="agree__text">
+                Я соглашаюсь получать рекламные и иные маркетинговые сообщения от «Natem» на условиях
+                <a href="./policy.html" target="_blank">Политики конфиденциальности</a>
+                и <a href="./agree.html" target="_blank">Пользовательского соглашения</a>.
+              </span>
+            </label>
+          </form>
+          <!-- <div class="callback">
+            <h4 class="callback__title h5">Произошла ошибка, попробуйте еще</h4>
+            <p class="callback__text">💔</p>
+            <button class="callback__btn btn btn_green" type="button">Обновить</button>
+          </div> -->
+          <!-- <div class="callback">
+            <h4 class="callback__title h5">Ваша заявка отправлена!</h4>
+            <p class="callback__text">👌</p>
+            <button class="callback__btn btn btn_green" type="button">Обновить</button>
+          </div> -->
         </div>
       </div>
     </div>

@@ -10,7 +10,7 @@
     <link rel="apple-touch-icon" sizes="152x152" href="./img/content/touch-icon-ipad.png">
     <link rel="apple-touch-icon" sizes="167x167" href="./img/content/touch-icon-ipad-pro.png">
     <link rel="apple-touch-icon" sizes="180x180" href="./img/content/touch-icon-iphone-retina.png">
-    <title>Личный кабинет</title>
+    <title>Контакты</title>
     <link rel="stylesheet" href="./css/style.min.css">
     <script src="./js/script.min.js" defer></script>
   </head>
@@ -222,185 +222,95 @@
       </header>
 
       <main class="page">
-        <section class="lc">
+        <section class="contacts">
           <div class="container">
-            <div class="lc__body">
+            <div class="contacts__body">
               <ul class="breadcrumbs">
                 <li class="breadcrumbs__item">
                   <a class="breadcrumbs__link" href="./index.html">Главная</a>
                 </li>
                 <li class="breadcrumbs__item">
-                  <span class="breadcrumbs__link">Личный кабинет</span>
+                  <span class="breadcrumbs__link">Контакты</span>
                 </li>
               </ul>
-              <div class="lc__main">
-                <div class="lc__sidebar">
-                  <div class="lc-info">
-                    <span class="lc-info__title">ООО Омега</span>
-                    <dl class="lc-info__list">
-                      <div class="lc-info__item">
-                        <dt class="lc-info__name">Почта</dt>
-                        <dd class="lc-info__desc">mailmailmail@yandex.ru</dd>
-                      </div>
-                    </dl>
-                  </div>
-                  <div class="lc__navigation">
-                    <a class="lc__link" href="./lc-1.html">
-                      <svg class="lc__icon">
-                        <use xlink:href="./img/icons/icons.svg#history"></use>
-                      </svg>
-                      История заказов
-                    </a>
-                    <a class="lc__link lc__link_active" href="./lc-2.html">
-                      <svg class="lc__icon">
-                        <use xlink:href="./img/icons/icons.svg#mark"></use>
-                      </svg>
-                      Адреса доставки
-                    </a>
-                    <a class="lc__link" href="./lc-3.html">
-                      <svg class="lc__icon">
-                        <use xlink:href="./img/icons/icons.svg#user"></use>
-                      </svg>
-                      Личные данные
-                    </a>
-                    <a class="lc__link" href="./lc-4.html">
-                      <svg class="lc__icon">
-                        <use xlink:href="./img/icons/icons.svg#lock"></use>
-                      </svg>
-                      Изменение пароля
-                    </a>
-                  </div>
-                  <div class="lc__exit">
-                    <a class="lc__link lc__link_exit" href="#">
-                      <svg class="lc__icon">
-                        <use xlink:href="./img/icons/icons.svg#exit"></use>
-                      </svg>
-                      Выход
-                    </a>
+              <h1 class="contacts__title h3">Контакты</h1>
+              <div class="contacts__main">
+                <div class="contacts__info">
+                  <dl class="contacts__list">
+                    <div class="contacts__item">
+                      <dt class="contacts__name">Телефон и почта для связи</dt>
+                      <dd class="contacts__desc">
+                        <a class="contacts__link contacts__link_tel h5" href="tel:88003333887">
+                          8 800 33 33 887
+                        </a>
+                      </dd>
+                      <dd class="contacts__desc">
+                        <a
+                          class="contacts__link contacts__link_mail"
+                          href="mailto:support@natem.ru"
+                          target="_blank"
+                        >
+                          support@natem.ru
+                        </a>
+                      </dd>
+                    </div>
+                    <div class="contacts__item">
+                      <dt class="contacts__name">Наш адрес</dt>
+                      <dd class="contacts__desc">
+                        <address class="contacts__address">
+                          123456, г Москва, ул. Красная площадь, дом 32, офис 1234
+                        </address>
+                      </dd>
+                    </div>
+                  </dl>
+                  <div class="contacts__map">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2260.511385167409!2d37.54805177787766!3d55.4886135729876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414aa9471e31f1ff%3A0xe5c68d8fb8c1a381!2z0YPQuy4g0JrRgNCw0YHQvdCw0Y8sIDMyLCAxMjM0LCDQnNC-0YHQutCy0LAsIDE0MjE3MA!5e0!3m2!1sru!2sru!4v1698500548846!5m2!1sru!2sru"
+                      allowfullscreen
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
                   </div>
                 </div>
-                <div class="lc__content">
-                  <div class="lc__inner">
-                    <h4 class="lc__title h5">Адреса доставки</h4>
-                    <div class="addresses">
-                      <ul class="addresses__list">
-                        <li class="addresses__item">
-                          <div class="address">
-                            <label class="address__main">
-                              <input class="address__input" type="radio" name="address">
-                              <span class="address__icon"></span>
-                              <span class="address__text">
-                                г. Москва, Название улицы, дом №1 к2, офис 345А
-                              </span>
-                            </label>
-                            <div class="address__action">
-                              <button
-                                class="address__btn address__btn_edit"
-                                type="button"
-                                aria-label="Редактировать адрес"
-                                title="Редактировать адрес"
-                              >
-                                <svg class="address__btn-icon">
-                                  <use xlink:href="./img/icons/icons.svg#edit"></use>
-                                </svg>
-                              </button>
-                              <button
-                                class="address__btn address__btn_del"
-                                type="button"
-                                aria-label="Удалить адрес"
-                                title="Удалить адрес"
-                              >
-                                <svg class="address__btn-icon">
-                                  <use xlink:href="./img/icons/icons.svg#close"></use>
-                                </svg>
-                              </button>
-                            </div>
-                          </div>
-                          <dl class="addresses__desc">
-                            <dt>Комментарий к адресу:</dt>
-                            <dd>Есть шлагбаум, звоните.</dd>
-                          </dl>
-                        </li>
-                        <li class="addresses__item">
-                          <div class="address">
-                            <label class="address__main">
-                              <input class="address__input" type="radio" name="address">
-                              <span class="address__icon"></span>
-                              <span class="address__text">
-                                г. Москва, Название улицы, дом №1 к2, офис 345Аг. Москва, Название улицы,
-                                дом №1 к2, офис 345А
-                              </span>
-                            </label>
-                            <div class="address__action">
-                              <button
-                                class="address__btn address__btn_edit"
-                                type="button"
-                                aria-label="Редактировать адрес"
-                                title="Редактировать адрес"
-                              >
-                                <svg class="address__btn-icon">
-                                  <use xlink:href="./img/icons/icons.svg#edit"></use>
-                                </svg>
-                              </button>
-                              <button
-                                class="address__btn address__btn_del"
-                                type="button"
-                                aria-label="Удалить адрес"
-                                title="Удалить адрес"
-                              >
-                                <svg class="address__btn-icon">
-                                  <use xlink:href="./img/icons/icons.svg#close"></use>
-                                </svg>
-                              </button>
-                            </div>
-                          </div>
-                        </li>
-                        <li class="addresses__item">
-                          <div class="address">
-                            <label class="address__main">
-                              <input class="address__input" type="radio" name="address">
-                              <span class="address__icon"></span>
-                              <span class="address__text">
-                                г. Москва, Название улицы, дом №1 к2, офис 345А
-                              </span>
-                            </label>
-                            <div class="address__action">
-                              <button
-                                class="address__btn address__btn_edit"
-                                type="button"
-                                aria-label="Редактировать адрес"
-                                title="Редактировать адрес"
-                              >
-                                <svg class="address__btn-icon">
-                                  <use xlink:href="./img/icons/icons.svg#edit"></use>
-                                </svg>
-                              </button>
-                              <button
-                                class="address__btn address__btn_del"
-                                type="button"
-                                aria-label="Удалить адрес"
-                                title="Удалить адрес"
-                              >
-                                <svg class="address__btn-icon">
-                                  <use xlink:href="./img/icons/icons.svg#close"></use>
-                                </svg>
-                              </button>
-                            </div>
-                          </div>
-                          <dl class="addresses__desc">
-                            <dt>Комментарий к адресу:</dt>
-                            <dd>
-                              Есть шлагбаум, звоните. Есть шлагбаум, звоните. Есть шлагбаум, звоните. Есть
-                              шлагбаум.
-                            </dd>
-                          </dl>
-                        </li>
-                      </ul>
-                      <button class="addresses__btn btn btn_light" type="button">
-                        Добавить новый адрес
-                      </button>
+                <div class="contacts__form">
+                  <form class="callback" action="#">
+                    <h4 class="callback__title h5">Форма обратной связи</h4>
+                    <div class="callback__inputs">
+                      <div class="callback__input">
+                        <div class="input">
+                          <input class="input__body" type="text" name="name" placeholder=" " required>
+                          <span class="input__placeholder">Ваше имя</span>
+                        </div>
+                      </div>
+                      <div class="callback__input">
+                        <div class="input">
+                          <input class="input__body" type="tel" name="tel" placeholder=" " required>
+                          <span class="input__placeholder">Телефон</span>
+                        </div>
+                      </div>
                     </div>
-                  </div>
+                    <button class="callback__btn btn btn_green" type="submit">Отправить</button>
+                    <label class="callback__agree agree agree_dark">
+                      <input class="agree__checkbox" type="checkbox">
+                      <span class="agree__icon"></span>
+                      <span class="agree__text">
+                        Я соглашаюсь получать рекламные и иные маркетинговые сообщения от «Natem» на
+                        условиях
+                        <a href="./policy.html" target="_blank">Политики конфиденциальности</a>
+                        и <a href="./agree.html" target="_blank">Пользовательского соглашения</a>.
+                      </span>
+                    </label>
+                  </form>
+                  <!-- <div class="callback">
+                    <h4 class="callback__title h5">Произошла ошибка, попробуйте еще</h4>
+                    <p class="callback__text">💔</p>
+                    <button class="callback__btn btn btn_green" type="button">Обновить</button>
+                  </div> -->
+                  <!-- <div class="callback">
+                    <h4 class="callback__title h5">Ваша заявка отправлена!</h4>
+                    <p class="callback__text">👌</p>
+                    <button class="callback__btn btn btn_green" type="button">Обновить</button>
+                  </div> -->
                 </div>
               </div>
             </div>
