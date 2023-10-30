@@ -5487,6 +5487,41 @@ svg {
   text-align: center;
 }
 
+.success {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding-top: 70px;
+  text-align: center;
+}
+
+.success__img {
+  width: 114px;
+  height: 114px;
+  margin-bottom: 40px;
+}
+
+.success__title {
+  margin-bottom: 8px;
+}
+
+.success__text span {
+  color: var(--color-green-light);
+}
+
+.success__btn {
+  min-width: 172px;
+  margin-top: 40px;
+}
+
 .contacts__body {
   padding: 0 211px 84px;
 }
@@ -8163,6 +8198,24 @@ textarea.input__body:focus-visible {
     margin: 45px 0 65px;
   }
 
+  .success {
+    padding: 50px 0;
+  }
+
+  .success__img {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 20px;
+  }
+
+  .success__title {
+    margin-bottom: 5px;
+  }
+
+  .success__btn {
+    margin-top: 20px;
+  }
+
   .contacts__body {
     padding: 0 168px 60px;
   }
@@ -8595,9 +8648,12 @@ textarea.input__body:focus-visible {
     padding: var(--padding-page);
   }
 
-  .request .breadcrumbs__link_back,
-  .cart .breadcrumbs__link_back {
+  .request .breadcrumbs__link_back {
     margin-left: 6px;
+  }
+
+  .cart .breadcrumbs__link_back {
+    margin-left: 2px;
   }
 
   .pagination__item a,
@@ -9365,6 +9421,11 @@ textarea.input__body:focus-visible {
     height: 74px;
   }
 
+  .success__img {
+    width: 74px;
+    height: 74px;
+  }
+
   .contacts__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -9997,6 +10058,10 @@ textarea.input__body:focus-visible {
     padding: 0 20px;
   }
 
+  .success__btn {
+    min-width: 150px;
+  }
+
   .contacts__body {
     padding: 0 0 18px;
   }
@@ -10162,9 +10227,8 @@ textarea.input__body:focus-visible {
     padding: var(--padding-page);
   }
 
-  .request .breadcrumbs__link_back,
-  .cart .breadcrumbs__link_back {
-    margin-left: 0;
+  .request .breadcrumbs__link_back {
+    margin-left: 2px;
   }
 
   .mobile-menu__list {
